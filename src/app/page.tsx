@@ -1,4 +1,4 @@
-import Image from "next/image"; // Import the Image component
+import Image from "next/image"; // It imports the Image component of next-js
 
 export default function HomePage() {
   return (
@@ -30,8 +30,8 @@ export default function HomePage() {
           <Image
             src="/team.jpg"
             alt="Our Team"
-            width={500} // Replace with an appropriate width
-            height={300} // Replace with an appropriate height
+            width={500} 
+            height={300}
             className="mt-6 rounded-lg shadow-lg"
           />
           Technical Solution, anywhere, anytime
@@ -40,8 +40,8 @@ export default function HomePage() {
           <Image
             src="/e-learning.jpg"
             alt="E-Learning"
-            width={500} // Replace with an appropriate width
-            height={300} // Replace with an appropriate height
+            width={500} 
+            height={300} 
             className="mt-6 rounded-lg shadow-lg"
           />
           E-Learning-from professional &amp; expert teachers. Improve your skills,
@@ -51,8 +51,8 @@ export default function HomePage() {
           <Image
             src="/tech01.jpg"
             alt="Technology"
-            width={500} // Replace with an appropriate width
-            height={300} // Replace with an appropriate height
+            width={500} 
+            height={300}
             className="mt-6 rounded-lg shadow-lg"
           />
           Learn about the latest technology trends and innovations.

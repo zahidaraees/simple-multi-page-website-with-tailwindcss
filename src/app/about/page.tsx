@@ -16,8 +16,8 @@ export default function AboutPage() {
           <Image
             src="/team.jpg"
             alt="Our Team"
-            width={500} // Specify appropriate width
-            height={300} // Specify appropriate height
+            width={500} 
+            height={300}
             className="mt-6 rounded-lg shadow-lg"
           />
           Technical Solution, anywhere, anytime
