@@ -1,5 +1,6 @@
 import './globals.css';
 import { ReactNode } from 'react';
+import Link from 'next/link'; 
 
 export const metadata = {
   title: 'Simple Multi-Page Website-Milestone2',
@@ -14,9 +15,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <div className="container mx-auto flex items-center justify-between p-4">
             <h1 className="text-xl font-bold text-blue-600">ZR Professional Website</h1>
             <nav className="space-x-4">
-              <a href="/" className="text-gray-700 hover:text-blue-700">Home</a>
-              <a href="/about" className="text-gray-700 hover:text-blue-600 hover">About</a>
-              <a href="/contact" className="text-gray-700 hover:text-blue-600">Contact</a>
+              {/* Replace <a> with <Link> */}
+              <Link href="/" className="text-gray-700 hover:text-blue-700">Home</Link>
+              <Link href="/about" className="text-gray-700 hover:text-blue-600">About</Link>
+              <Link href="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
             </nav>
           </div>
         </header>

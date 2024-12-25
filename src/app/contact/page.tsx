@@ -1,40 +1,63 @@
-export default function ContactPage() {
+import Image from "next/image"; // Import the Image component
+
+export default function HomePage() {
   return (
-    <section className="bg-white p-8 rounded-lg shadow-lg">
-      <h1 className="text-3xl font-bold text-blue-600">Contact Us</h1>
-      <p className="mt-4 text-gray-700">We'd love to hear from you. Fill out the form below to get in touch.</p>
-      <form className="mt-6 space-y-4">
+    <div>
+      <section className="text-center py-16 rounded-lg shadow-lg bg-white">
+        <h1 className="text-4xl font-bold text-blue-600">
+          Welcome to ZR Professional Website
+        </h1>
+        <p className="mt-4 text-gray-700">
+          We create innovative solutions to help you achieve your goals.
+        </p>
+        <div className="mt-8">
+          <a
+            href="/about"
+            className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+          >
+            Learn More
+          </a>
+          <a
+            href="/contact"
+            className="ml-4 px-6 py-2 bg-gray-100 text-blue-600 rounded-lg hover:bg-gray-200"
+          >
+            Contact Us
+          </a>
+        </div>
+      </section>
+      <div className="grid grid-cols-3 grid-rows-1 gap-4">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-          <input
-            type="text"
-            id="name"
-            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-600 focus:border-blue-600"
+          <Image
+            src="/team.jpg"
+            alt="Our Team"
+            width={500} // Replace with an appropriate width
+            height={300} // Replace with an appropriate height
+            className="mt-6 rounded-lg shadow-lg"
           />
+          Technical Solution, anywhere, anytime
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-          <input
-            type="email"
-            id="email"
-            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-600 focus:border-blue-600"
+          <Image
+            src="/e-learning.jpg"
+            alt="E-Learning"
+            width={500} // Replace with an appropriate width
+            height={300} // Replace with an appropriate height
+            className="mt-6 rounded-lg shadow-lg"
           />
+          E-Learning-from professional &amp; expert teachers. Improve your skills,
+          move toward bright career.
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-          <textarea
-            id="message"
-            rows={4}
-            className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-600 focus:border-blue-600"
-          ></textarea>
+          <Image
+            src="/tech01.jpg"
+            alt="Technology"
+            width={500} // Replace with an appropriate width
+            height={300} // Replace with an appropriate height
+            className="mt-6 rounded-lg shadow-lg"
+          />
+          Learn about the latest technology trends and innovations.
         </div>
-        <button
-          type="submit"
-          className="w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-        >
-          Send Message
-        </button>
-      </form>
-    </section>
+      </div>
+    </div>
   );
 }

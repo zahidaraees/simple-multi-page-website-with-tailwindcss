@@ -1,4 +1,4 @@
-//•	Assignment:	Build a simple multi-page website using React components.	Apply Tailwind CSS to style the website, ensuring responsiveness.
+import Image from "next/image"; // Import the Image component
 
 export default function HomePage() {
   return (
@@ -27,28 +27,35 @@ export default function HomePage() {
       </section>
       <div className="grid grid-cols-3 grid-rows-1 gap-4">
         <div>
-          <img
+          <Image
             src="/team.jpg"
             alt="Our Team"
+            width={500} // Replace with an appropriate width
+            height={300} // Replace with an appropriate height
             className="mt-6 rounded-lg shadow-lg"
-          />{" "}
+          />
           Technical Solution, anywhere, anytime
         </div>
         <div>
-          <img
+          <Image
             src="/e-learning.jpg"
-            alt="Our Team"
+            alt="E-Learning"
+            width={500} // Replace with an appropriate width
+            height={300} // Replace with an appropriate height
             className="mt-6 rounded-lg shadow-lg"
           />
-          E-Learning-from professional & expert teachers. Improve your skills,
+          E-Learning-from professional &amp; expert teachers. Improve your skills,
           move toward bright career.
         </div>
         <div>
-          <img
+          <Image
             src="/tech01.jpg"
-            alt="Our Team"
+            alt="Technology"
+            width={500} // Replace with an appropriate width
+            height={300} // Replace with an appropriate height
             className="mt-6 rounded-lg shadow-lg"
           />
+          Learn about the latest technology trends and innovations.
         </div>
       </div>
     </div>
